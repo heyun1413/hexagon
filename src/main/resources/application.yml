@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/.h2/hexagondb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: w123456
+    data:
+  tomcat:
+    max-wait: 20000
+    max-active: 50
+    max-idle: 20
+    min-idle: 15
+  jpa:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
